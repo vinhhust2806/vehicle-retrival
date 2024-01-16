@@ -1,4 +1,15 @@
 # Vehicle-Retrival
 
 ### Data preparation:
-Download the training and testing datasets [Google Drive](https://drive.google.com/file/d/1pFxb9NbM8mj_rlSawTlcXG1OdVGAbRQC/view?usp=sharing)/[Baidu Drive](https://pan.baidu.com/s/1BTgT27VxvOgKpHrigwm7Bw?) [code:sydz] and move them into 'data/' folder.
+Download the datasets and move them into 'data/' folder.
+
+### Model
+1. Video Recognition Module (baseline)
+
+Please download the pretrain model [here](https://drive.google.com/drive/folders/19CcSZ-7Hvf0VwiWOes1xr8j499w4TToM?usp=sharing) for test, and put it in `\model\vrm\ckpts\`.
+
+```bash
+cd model/vrm
+sh ./scripts/train.sh # train
+sh ./scripts/test.sh  # test
+```
