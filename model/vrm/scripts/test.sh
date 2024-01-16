@@ -1,12 +1,12 @@
 # ViT-B/16
 job_name="test_vsm_vit16_test01" # train job name
-DATA_PATH="/dfs/data/others/aicity23/dataset" # data path
+DATA_PATH="C:" # data path
 python -m torch.distributed.launch --nproc_per_node=4 \
     test_vrm.py --num_thread_reader=8 \
     --do_eval --best_model "ckpts/best_model.bin" \
     --epochs=50 --batch_size=40 --n_display=10 \
-    --data_path ${DATA_PATH}/aicity \
-    --features_path ${DATA_PATH}/aicity/testvideobox \
+    --data_path ${DATA_PATH} \
+    --features_path ${DATA_PATH}/testvideobox \
     --output_dir ckpts/${job_name} \
     --lr 1e-4 --max_words 32 --max_frames 20 --batch_size_val 40 \
     --datatype msvd \
