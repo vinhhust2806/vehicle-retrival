@@ -1,4 +1,4 @@
-# Vehicle-Retrival
+# Tracked-Vehicle Retrieval by Natural Language Descriptions
 
 ### Data preparation:
 Download the datasets [here](https://drive.google.com/file/d/1lYMXLjnWPDUxYDzd2TmeIv-HVK0P2QEE/view) and move them into 'data/' folder.
