@@ -1,5 +1,16 @@
 # Tracked-Vehicle Retrieval by Natural Language Descriptions
 
+### Dowload source:
+Download source and let all of them into 'vehicle-retrival/' folder.
+vehicle-retrival 
+-- data
+-- model
+-- preprocessing
+-- xclip
+-- testvideobox
+-- requirement.txt
+-- Readme.md
+
 ### Data preparation:
 Download the datasets [here](https://drive.google.com/file/d/1lYMXLjnWPDUxYDzd2TmeIv-HVK0P2QEE/view) and move them into 'data/' folder.
 
