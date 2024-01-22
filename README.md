@@ -24,9 +24,11 @@ python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-
 python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-retrival/data/validation/S05
 
 #### Generate median background
+```
 python /vehicle-retrival/preprocessing/generate_median.py
 
 #### Create text data
+```
 python /vehicle-retrival/preprocessing/create_vrm_data.py
 
 #### Create video data
