@@ -1,6 +1,6 @@
 # Tracked-Vehicle Retrieval by Natural Language Descriptions
 
-### Dowload source:
+### Source:
 Download source and let all of them into 'vehicle-retrival/' folder.
 
 vehicle-retrival 
