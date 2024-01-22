@@ -1,6 +1,6 @@
 # ViT-B/16
 job_name="train_vsm_vit16_test01" 
-DATA_PATH="C:"
+DATA_PATH="Vehicle-Retrival"
 python -m torch.distributed.launch --nproc_per_node=4 \
     train_vrm.py --do_train --num_thread_reader=8 \
     --epochs=50 --batch_size=40 --n_display=10 \
