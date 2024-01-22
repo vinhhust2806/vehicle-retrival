@@ -15,7 +15,7 @@ vehicle-retrival
 
 ### Data preparation:
 Download the datasets [here](https://drive.google.com/file/d/1lYMXLjnWPDUxYDzd2TmeIv-HVK0P2QEE/view) and move them into 'data/' folder.
-
+#### Extract frames from videos
 ```
 python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-retrival/data/train/S01
 python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-retrival/data/train/S03
@@ -23,8 +23,13 @@ python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-
 python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-retrival/data/validation/S02
 python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-retrival/data/validation/S05
 
+#### Generate median background
 python /vehicle-retrival/preprocessing/generate_median.py
+
+#### Create text data
 python /vehicle-retrival/preprocessing/create_vrm_data.py
+
+#### Create video data
 python /vehicle-retrival/preprocessing/create_video_clip.py
 ```
 
