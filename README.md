@@ -20,7 +20,7 @@ python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-
 python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-retrival/data/train/S04
 python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-retrival/data/validation/S02
 python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-retrival/data/validation/S05
-```
+
 ### Model
 Please download the pretrain model [here](https://drive.google.com/drive/folders/19CcSZ-7Hvf0VwiWOes1xr8j499w4TToM?usp=sharing) for test, and put it in `\model\vrm\ckpts\`.
 
