@@ -28,7 +28,7 @@ python /vehicle-retrival/preprocessing/create_video_clip.py
 ```
 
 ### Model
-Please download the pretrain model [here](https://drive.google.com/drive/folders/19CcSZ-7Hvf0VwiWOes1xr8j499w4TToM?usp=sharing) for test, and put it in `\model\vrm\ckpts\`.
+Please download the pretrain model [here](https://drive.google.com/drive/folders/19CcSZ-7Hvf0VwiWOes1xr8j499w4TToM?usp=sharing) for test, and put it in `ckpts/`.
 
 ```bash
 cd model/vrm
