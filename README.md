@@ -21,6 +21,10 @@ python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-
 python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-retrival/data/train/S04
 python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-retrival/data/validation/S02
 python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-retrival/data/validation/S05
+
+python /vehicle-retrival/preprocessing/generate_median.py
+python /vehicle-retrival/preprocessing/create_vrm_data.py
+python /vehicle-retrival/preprocessing/create_video_clip.py
 ```
 
 ### Model
