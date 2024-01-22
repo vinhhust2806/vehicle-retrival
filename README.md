@@ -32,9 +32,9 @@ python /vehicle-retrival/preprocessing/generate_median.py
 python /vehicle-retrival/preprocessing/create_vrm_data.py
 ```
 #### Create video data
+```
 python /vehicle-retrival/preprocessing/create_video_clip.py
-
-
+```
 ### Model
 Please download the pretrain model [here](https://drive.google.com/drive/folders/19CcSZ-7Hvf0VwiWOes1xr8j499w4TToM?usp=sharing) for test, and put it in `ckpts/`.
 
