@@ -14,7 +14,7 @@ vehicle-retrival
 
 ### Data preparation:
 Download the datasets [here](https://drive.google.com/file/d/1lYMXLjnWPDUxYDzd2TmeIv-HVK0P2QEE/view) and move them into 'data/' folder.
-```
+
 python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-retrival/data/train/S01
 python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-retrival/data/train/S03
 python /vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root /vehicle-retrival/data/train/S04
