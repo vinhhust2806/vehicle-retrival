@@ -33,7 +33,7 @@ def main(args):
 if __name__ == '__main__':
     print("Loading parameters...")
     parser = argparse.ArgumentParser(description='Extract video frames')
-    parser.add_argument('--data_root', dest='data_root', default='data\train\S01',
+    parser.add_argument('--data_root', dest='data_root', default='./vehicle-retrival/data/train\S01',
                         help='dataset root path')
 
     args = parser.parse_args()

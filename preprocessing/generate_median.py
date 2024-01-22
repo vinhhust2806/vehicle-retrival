@@ -34,5 +34,5 @@ def video_list(path):
       
 
 # video path
-path = "/data/"
+path = "./vehicle-retrival/data/"
 video_list(path)
