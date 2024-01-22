@@ -1,8 +1,8 @@
 # ViT-B/16
 job_name="train_vsm_vit16_test01" 
-DATA_PATH="./vehicle-retrival"
+DATA_PATH="/vehicle-retrival"
 python -m torch.distributed.launch --nproc_per_node=4 \
-    train_vrm.py --do_train --num_thread_reader=8 \
+    train_vrm.py --do_train --num_thread_reader=8 \  # num_thread_read = 0 recommend
     --epochs=50 --batch_size=40 --n_display=10 \
     --data_path ${DATA_PATH} \
     --features_path ${DATA_PATH}/testvideobox \
