@@ -19,8 +19,8 @@ def background_video(path):
     data = {}
     with open(path, "r") as f:
         data = json.load(f)
-    suffix = "/data"
-    save_path = "/vehicle-retrival/testvideobox" 
+    suffix = "vehicle-retrival/data"
+    save_path = "vehicle-retrival/testvideobox" 
     for idx, vid in enumerate(data):
         info = data[vid]
         # mask roi
@@ -45,6 +45,6 @@ def background_video(path):
         save_clip_path = save_path + "/{}.mp4".format(vid)
         save_video(save_clip_path, video_clip) 
         
-path = "/vehicle-retrival/data/train-tracks.json"   
-path = "/vehicle-retrival/data/test-tracks.json"   
+path = "vehicle-retrival/data/train-tracks.json"   
+path = "vehicle-retrival/data/test-tracks.json"   
 background_video(path)
