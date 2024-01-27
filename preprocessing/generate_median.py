@@ -19,7 +19,7 @@ def get_video_median(path, root, count):
     # Save the median image in the same folder as video
     img_save = '{}/median_100.jpg'.format(root)
     cv2.imwrite(img_save, medianFrame)
-    shutil.copy(img_save, '/vehicle-retrival/data/median_result/{}.jpg'.format(str(count)))
+    shutil.copy(img_save, 'vehicle-retrival/data/median_result/{}.jpg'.format(str(count)))
     
     
 def video_list(path):
@@ -34,5 +34,5 @@ def video_list(path):
       
 
 # video path
-path = "/vehicle-retrival/data/"
+path = "vehicle-retrival/data/"
 video_list(path)
