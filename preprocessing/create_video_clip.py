@@ -45,7 +45,7 @@ def background_video(path):
         save_clip_path = save_path + "/{}.mp4".format(vid)
         save_video(save_clip_path, video_clip) 
         
-path = "vehicle-retrival/data/train-tracks.json"   
-path1 = "vehicle-retrival/data/test-tracks.json"   
+path = "vehicle-retrival/data/train_tracks.json"   
+path1 = "vehicle-retrival/data/test_tracks.json"   
 background_video(path)
 background_video(path1)
