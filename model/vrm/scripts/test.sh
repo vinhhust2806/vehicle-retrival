@@ -1,6 +1,6 @@
 # ViT-B/16
 job_name="test_vsm_vit16_test01" # train job name
-DATA_PATH="/vehicle-retrival" # data path
+DATA_PATH="vehicle-retrival" # data path
 python -m torch.distributed.launch --nproc_per_node=4 \
     test_vrm.py --num_thread_reader=8 \   # num_thread_read = 0 recommend
     --do_eval --best_model "ckpts/best_model.bin" \
