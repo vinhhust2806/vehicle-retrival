@@ -46,5 +46,6 @@ def background_video(path):
         save_video(save_clip_path, video_clip) 
         
 path = "vehicle-retrival/data/train-tracks.json"   
-path = "vehicle-retrival/data/test-tracks.json"   
+path1 = "vehicle-retrival/data/test-tracks.json"   
 background_video(path)
+background_video(path1)
