@@ -2,7 +2,7 @@
 job_name="test_vsm_vit16_test01" # train job name
 DATA_PATH="vehicle-retrival" # data path
 python -m torch.distributed.launch --nproc_per_node=4 \
-    test_vrm.py --num_thread_reader=8 \   # num_thread_read = 0 if you have 1 gpu
+    test_vrm.py --num_thread_reader=8 \   # num_thread_read = 0 if you have 1 gpu              # test_intern.py instead of test_vrm.py if use intern to test model
     --do_eval --best_model "ckpts/best_model.bin" \      # best_model: Weight for test
     --epochs=50 --batch_size=40 --n_display=10 \
     --data_path ${DATA_PATH}/xclip/data \                # Folder hold three file: train_list.txt, val_list.txt, text_list.txt 
