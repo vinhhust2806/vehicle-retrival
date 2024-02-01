@@ -1,21 +1,23 @@
 # Tracked-Vehicle Retrieval by Natural Language Descriptions
 
 ### Source:
-Download source and let all of them into 'vehicle-retrival/' folder.
-
-vehicle-retrival 
- - ckpts
- - data
- - model
- - preprocessing
- - xclip
- - testvideobox
- - requirement.txt
- - Readme.md
-
+Download source and you will get a directory tree like this.
+├── vehicle-retrival 
+│   ├── xclip
+│   │   ├── data
+│   ├── data
+│   ├── model
+│   │   ├── vrm
+│   ├── testvideobox
+│   ├── preprocessing
+│   │   ├── create_video_clip.py
+│   │   ├── create_vrm_data.py
+│   │   ├── extract_vdo_frms.py
+│   │   ├── generate_median.py
+│   ├── requirement.txt
+│   ├── Readme.md
 ### Data preparation:
 Download the datasets [here](https://drive.google.com/file/d/1lYMXLjnWPDUxYDzd2TmeIv-HVK0P2QEE/view) and move them into 'data/' folder.
-#### Setup folder, data
 ```
 git clone https://github.com/vinhhust2806/vehicle-retrival.git
 gdown --id 1lYMXLjnWPDUxYDzd2TmeIv-HVK0P2QEE
