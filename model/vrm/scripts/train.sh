@@ -2,7 +2,7 @@
 job_name="train_vsm_vit16_test01" 
 DATA_PATH="vehicle-retrival"
 python -m torch.distributed.launch --nproc_per_node=4 \                  
-    train_vrm.py --do_train --num_thread_reader=8 \  # num_thread_read = 0 if you have 1 gpu
+    train_vrm.py --do_train --num_thread_reader=8 \  # num_thread_read = 0 if you have 1 gpu   # train_intern.py instead of train_vrm.py if use intern to train model
     --epochs=50 --batch_size=40 --n_display=10 \     
     --data_path ${DATA_PATH}/xclip/data \            # Folder hold three file: train_list.txt, val_list.txt, text_list.txt 
     --features_path ${DATA_PATH}/testvideobox \      # Folder hold videos
