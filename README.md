@@ -15,6 +15,14 @@ vehicle-retrival
 
 ### Data preparation:
 Download the datasets [here](https://drive.google.com/file/d/1lYMXLjnWPDUxYDzd2TmeIv-HVK0P2QEE/view) and move them into 'data/' folder.
+#### Setup folder, data
+```
+git clone https://github.com/vinhhust2806/vehicle-retrival.git
+gdown --id 1lYMXLjnWPDUxYDzd2TmeIv-HVK0P2QEE
+import os
+os.makedirs('/content/vehicle-retrival/testvideobox')
+unzip 'AIC22_Track2_NL_Retrieval.zip' -d 'vehicle-retrival/data' 
+```
 #### Extract frames from videos
 ```
 python vehicle-retrival/preprocessing/extract_vdo_frms.py --data_root vehicle-retrival/data/train/S01
