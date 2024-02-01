@@ -17,6 +17,7 @@ Download source and you will get a directory tree like this.
 │   │   ├── generate_median.py
 │   ├── requirement.txt
 │   ├── Readme.md
+│   ├── Colab_Instruction.ipynb
 ```
 ### Data preparation:
 Download the datasets [here](https://drive.google.com/file/d/1lYMXLjnWPDUxYDzd2TmeIv-HVK0P2QEE/view) and move them into 'data/' folder.
